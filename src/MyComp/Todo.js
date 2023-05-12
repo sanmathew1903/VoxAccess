@@ -6,6 +6,7 @@ export default function Todo({todo}) {
       <h2>
         {todo.sno}
         {todo.task}
+        
       </h2>
     </>
   )
