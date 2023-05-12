@@ -8,7 +8,7 @@ function Mybutton() {
   }
 
   return (
-    <button onClick={press} style={{height:100,width:100}}>the button was click {count} times .</button>
+    <button onClick={press} style={{height:100,width:100}}>Button click count:{count} times .</button>
 
   )
 }
