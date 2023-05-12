@@ -1,10 +1,22 @@
 import { useState } from "react";
 
-function App()
-{
-  return(
+
+function Mybutton() {
+  const [count, setCount] = useState(0)
+  function press() {
+    setCount(count + 1)
+  }
+
+  return (
+    <button onClick={press} style={{height:100,width:100}}>the button was click {count} times .</button>
+
+  )
+}
+function App() {
+  return (
     <>
-    <h1>hello</h1>
+      <Mybutton />
+      <Mybutton />
     </>
   )
 }
